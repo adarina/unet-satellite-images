@@ -1,0 +1,4 @@
+*.pth
+land-dataset/
+road-dataset/
+
