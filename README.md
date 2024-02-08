@@ -1,19 +1,28 @@
+# U-net Road and Land Project Startup Instructions
 
-# Instrukcja uruchomieniu projektu U-net Road i Land
+This guide provides instructions for running the U-net architecture for road extraction and land classification projects using Google Colab. Note that the provided notebooks will include the training procedures for both models.
 
-Aby uruchomić jeden z dwóch projektów w środowisku Google Colab, wykonaj poniższe kroki:
+## Introduction
+These instructions will guide you through the process of training U-net models for road extraction and land classification. The land classification model utilizes the dataset available at [DeepGlobe Land Cover Classification Dataset](https://www.kaggle.com/datasets/balraj98/deepglobe-land-cover-classification-dataset), while the road extraction model uses the dataset available at [DeepGlobe Road Extraction Dataset](https://www.kaggle.com/datasets/balraj98/deepglobe-road-extraction-dataset).
 
-## 1. Otwórz Google Colab
-Otwórz przeglądarkę internetową i przejdź pod adres https://colab.research.google.com.
+## Steps to Run the U-net Road and Land Project
 
-## 2. Zaimportuj wybrany notatnik
-W Google Colab, wybierz opcję "File" (Plik) w menu głównym, a następnie wybierz "Open Notebook" (Otwórz notatnik).
+1. Open Google Colab
 
-## 3. Wybierz środowisko uruchomieniowe
-Upewnij się, że masz dostęp do odpowiedniego środowiska uruchomieniowego. Wybierz "Runtime" (Uruchomienie) w menu głównym, a następnie wybierz "Change runtime type" (Zmień typ uruchomienia). Wybierz odpowiednią opcję, taką jak CPU, GPU lub TPU, w zależności od dostępnych zasobów.
+   Open a web browser and navigate to https://colab.research.google.com.
 
-## 4. Zmień ścieżkę do katalogu z danymi
-W komórce notatnika, która odnosi się do danych (```drive-dir```), upewnij się, że zmieniono ścieżkę do katalogu głównego.
+2. Import the Selected Notebook
 
-## 5. Wykonaj notatnik
-Kliknij "Runtime" (Uruchomienie) w menu głównym i wybierz "Run all" (Uruchom wszystko), aby uruchomić wszystkie komórki notatnika lub uruchamiaj komórki po kolei (zalecane w szczególności, gdy nie chcemy trenować na nowo modelu tylko wczytać istniejący).
+   In Google Colab, select "File" in the main menu, then choose "Open Notebook".
+
+3. Choose Runtime Environment
+
+   Ensure you have access to the appropriate runtime environment. Select "Runtime" from the main menu, then choose "Change runtime type". Choose the desired option, such as CPU, GPU, or TPU, depending on the available resources.
+
+4. Change the Data Directory Path
+
+   In the notebook cell referring to the data directory (`drive-dir`), ensure that the path to the main directory is modified. Download both datasets and place them in separate folders named `land-dataset` and `road-dataset`.
+
+5. Execute the Notebook
+
+   Click "Runtime" in the main menu and select "Run all" to execute all notebook cells, or run cells one by one (recommended, especially if you do not want to retrain the model but only load an existing one).
